@@ -1,6 +1,5 @@
 import sys
 import pandas as pd
-import numpy as np
 from sqlalchemy import create_engine
 import re
 import pickle
@@ -15,18 +14,13 @@ nltk.download('stopwords')
 nltk.download('averaged_perceptron_tagger')
 nltk.download('omw-1.4')
 
-from sklearn.pipeline import Pipeline, FeatureUnion
-from sklearn.model_selection import train_test_split, StratifiedKFold, cross_val_score, GridSearchCV
+from sklearn.pipeline import Pipeline
+from sklearn.model_selection import train_test_split, GridSearchCV
 from sklearn.metrics import classification_report
 from sklearn.feature_extraction.text import CountVectorizer, TfidfTransformer
 from sklearn.multioutput import MultiOutputClassifier
 
 from sklearn.linear_model import LogisticRegression
-from sklearn.svm import LinearSVC
-from sklearn.naive_bayes import MultinomialNB
-from sklearn.neighbors import KNeighborsClassifier
-from sklearn.tree import DecisionTreeClassifier
-from sklearn.ensemble import RandomForestClassifier
 
 random_state = 0
 
