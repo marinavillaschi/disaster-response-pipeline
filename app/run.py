@@ -7,7 +7,7 @@ from nltk.tokenize import word_tokenize
 
 from flask import Flask
 from flask import render_template, request
-from plotly.graph_objs import Bar
+from plotly.graph_objs import Bar, Histogram
 import joblib
 from sqlalchemy import create_engine
 
@@ -41,6 +41,8 @@ def index():
     # extract data needed for visuals
     Y = df.drop(columns = ['id', 'message', 'original', 'genre'])
     categories_names = (Y.columns)
+
+    Y['sum'] = Y.sum(axis=1)
     
     # create visuals
     graphs = [
@@ -60,6 +62,23 @@ def index():
                 'xaxis': {
                     'title': "Categories",
                     # 'tickangle' : "0"
+                }
+            }
+        },
+        {
+            'data': [
+                Histogram(
+                    x=Y['sum']
+                )
+            ],
+
+            'layout': {
+                'title': 'Histogram of number of categories',
+                'yaxis': {
+                    'title': "Count"
+                },
+                'xaxis': {
+                    'title': "Number of categories",
                 }
             }
         }
