@@ -37,13 +37,13 @@ This project includes a web app where an emergency worker can input a new messag
 
 Below are additional details about the project structure:
 
-* [/app](link) : contains the Flask webapp files. 
+* [/app](https://github.com/marinavillaschi/disaster-response-pipeline/tree/main/app) : contains the Flask webapp files. 
 
-* [/data](link) : contains both .csv files used on the ETL pipeline as well as the `process_data.py` script that holds all the ETL pipeline and the .db result from the ETL pipeline.
+* [/data](https://github.com/marinavillaschi/disaster-response-pipeline/tree/main/data) : contains both .csv files used on the ETL pipeline as well as the `process_data.py` script that holds all the ETL pipeline and the .db result from the ETL pipeline.
 
-* [/models](link) : contains the `train_classifier.py` script that holds the ML pipeline as well as the model pickle file.
+* [/models](https://github.com/marinavillaschi/disaster-response-pipeline/tree/main/models) : contains the `train_classifier.py` script that holds the ML pipeline as well as the model pickle file.
 
-* [/notebooks](link)  contains Jupyter Notebooks that were used to build both pipeline scripts.
+* [/notebooks](https://github.com/marinavillaschi/disaster-response-pipeline/tree/main/notebooks)  contains Jupyter Notebooks that were used to build both pipeline scripts.
 
 
 
@@ -70,7 +70,7 @@ Below are additional details about the project structure:
 
 ### Licensing
 
-[MIT license](link)
+[MIT license](https://github.com/marinavillaschi/disaster-response-pipeline/blob/main/license.txt)
 
 ### Authors
 
