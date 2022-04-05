@@ -1,5 +1,17 @@
-__pycache__
+### Python ###
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Jupyter Notebook
 .ipynb_checkpoints
+
+# Flask stuff:
+instance/
+.webassets-cache
+
+# files used for running notebooks
 workspace_utils.py
 categories.csv
 messages.csv
