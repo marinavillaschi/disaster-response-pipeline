@@ -61,7 +61,7 @@ Below are additional details about the project structure:
 
     - To run ETL pipeline that cleans data and stores in database
 
-        `python data/process_data.py data/disaster_messages.csv data/disaster_categories.csv data/disastermanegement.db`
+        `python data/process_data.py data/disaster_messages.csv data/disaster_categories.csv data/disastermanagement.db`
 
     - To run ML pipeline that trains classifier and saves
 
