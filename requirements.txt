@@ -4,3 +4,4 @@ Flask
 pandas
 plotly
 gunicorn
+sqlalchemy
