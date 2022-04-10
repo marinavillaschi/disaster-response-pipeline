@@ -113,10 +113,10 @@ def go():
 
 
 
-# def main():
-#     PORT = os.getenv('PORT', 3003)
-#     app.run(host='0.0.0.0', port=PORT, debug=True)
+def main():
+    PORT = os.getenv('PORT', 3003)
+    app.run(host='0.0.0.0', port=PORT, debug=True)
 
 
-# if __name__ == '__main__':
-#     main()
+if __name__ == '__main__':
+    main()
