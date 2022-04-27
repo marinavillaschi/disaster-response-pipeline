@@ -2,8 +2,6 @@ import json
 import plotly
 import pandas as pd
 
-import os
-
 from nltk.stem import WordNetLemmatizer
 from nltk.tokenize import word_tokenize
 
@@ -28,11 +26,11 @@ def tokenize(text):
     return clean_tokens
 
 # load data
-engine = create_engine('sqlite:///data/disastermanagement.db')
+engine = create_engine('sqlite:///../data/disastermanagement.db')
 df = pd.read_sql_table('labeledmessages', engine)
 
 # load model
-model = joblib.load("models/message_lr_classifier_.pkl")
+model = joblib.load("../models/message_lr_classifier.pkl")
 
 
 # index webpage displays cool visuals and receives user input text for model
@@ -112,10 +110,8 @@ def go():
     )
 
 
-
 def main():
-    PORT = os.getenv('PORT', 3003)
-    app.run(host='0.0.0.0', port=PORT, debug=True)
+    app.run(host='0.0.0.0', port=3003, debug=True)
 
 
 if __name__ == '__main__':

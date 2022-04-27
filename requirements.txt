@@ -1,7 +1,2 @@
 nltk
 scikit-learn
-Flask
-pandas
-plotly
-gunicorn
-sqlalchemy
