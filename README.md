@@ -14,8 +14,7 @@ https://user-images.githubusercontent.com/78309614/161602346-0ec13dfd-e1c4-4de0-
 2. [Project Description](#description)
 3. [File Descriptions](#files)
 4. [Instructions](#instructions)
-5. [Results](#results)
-6. [Licensing, Authors, and Acknowledgements](#licensing)
+5. [Licensing, Authors, and Acknowledgements](#licensing)
 
 ## Installation <a name="installation"></a>
 
